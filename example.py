@@ -5,7 +5,7 @@ import tkinter.messagebox
 #button clear action
 def clearEntry():
     entAmount.delete(0,END)
-    entCategory.delete(0.0,END)
+    entCategory.delete(1.0,END)
     entDate.delete(0,END)
     entTotalExpenses.delete(0,END)
 
