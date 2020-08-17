@@ -132,3 +132,5 @@ lblExTotalExpenses.grid(row=8,column=4,padx=2,sticky=W)
 
 #call the mainloop of tk
 root.mainloop()
+
+print ("hi from ajid")
