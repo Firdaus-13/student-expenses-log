@@ -12,7 +12,7 @@ class Application(tk.Frame):
         self.root.title("Student Expense Tracker")
         self.root.grid_rowconfigure(0, weight=1)
         self.root.grid_columnconfigure(0, weight=1)
-        self.root.config(background="white")
+        self.root.config(background="red")
  
         # Define the different GUI widgets
         self.Amount_label = tk.Label(self.root, text="Amount :")
