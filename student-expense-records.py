@@ -35,6 +35,12 @@ class Application(tk.Frame):
  
         self.delete_button = tk.Button(self.root, text="Delete", command=self.delete_data)
         self.delete_button.grid(row=100, column=100)
+   
+        self.total_button = tk.Button(self.root, text="Total")
+        self.total_button.grid(row=100, column=60)
+        
+        self.sort_button = tk.Button(self.root, text="Sort")
+        self.sort_button.grid(row=100, column=50)
  
         self.exit_button = tk.Button(self.root, text="Exit", command=self.root.quit)
         self.exit_button.grid(row=3, column=3)
@@ -57,8 +63,8 @@ class Application(tk.Frame):
         self.tree.grid(row=4, columnspan=4, sticky='nsew')
         self.treeview = self.tree
  
-        self.id = 0
-        self.iid = 0
+        self.id = 1
+        self.iid = 1
  
     def insert_data(self):
         self.treeview.insert('', 'end', iid=self.iid, text="" + str(self.id),
