@@ -17,7 +17,7 @@ class Application(tk.Frame):
         self.root.config(background="white")
  
         # Define the different GUI widgets
-        self.Amount_label = tk.Label(self.root, text="Amount :")
+        self.Amount_label = tk.Label(self.root, text="Amount:RM :")
         self.Amount_entry = tk.Entry(self.root)
         self.Amount_label.grid(row=0, column= 0 ,sticky = tk.W)
         self.Amount_entry.grid(row=0, column=1,sticky = tk.W)
@@ -35,7 +35,7 @@ class Application(tk.Frame):
         self.submit_button = tk.Button(self.root, text="Insert", command=self.insert_data)
         self.submit_button.grid(row=3, column=2, sticky = tk.W)
         
-        self.total_button = tk.Button(self.root, text="Total", command=self.total_data)
+        self.total_button = tk.Button(self.root, text="Total:RM", command=self.total_data)
         self.total_button.grid(row=3, column=4, sticky = tk.W)
  
         self.delete_button = tk.Button(self.root, text="Delete", command=self.delete_data)
